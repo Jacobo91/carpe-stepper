@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="./index.css">
+  <title>7 Step Stepper with Options</title>
+</head>
+<body>
+
+  <div class="announcement-bar">
+    &lt;1 minute sweatcare quiz
+  </div>
+
+  <header class="carpe-header center-both">
+    <img src="./assets/logo.png" alt="Carpe logo">
+  </header>
+
+  <main class="flex-column">
+
+    <div class="progress-section">
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <div class="progress-bar__circles">
+        <div class="circle done"></div>
+        <div class="circle current-step one">1</div>
+        <div class="circle two">2</div>
+        <div class="circle three">3</div>
+        <div class="circle four">4</div>
+        <div class="circle five">5</div>
+        <div class="circle final">?</div>
+      </div>
+    </div>
+
+
+    <div class="step-section flex-column">
+      <div class="step-content" id="stepContent">
+        <div class="titles flex-column">
+          <h1 class="title"></h1>
+          <p class="subtitle"></p>
+        </div>
+        <div class="options-wrapper"></div>
+        <!-- Step text and options will be injected here -->
+         <!-- Step 3 Template -->
+        <template id="step-3-template">
+          <div class="info-step">
+            <img src="step3-info.jpg" alt="Toxins illustration">
+            <div>
+              <h4>But don't worry we have a solution.</h4>
+              <p>see if it is right for you</p>
+            </div>
+          </div>
+        </template>
+
+        <!-- Step 7 Template -->
+        <template id="step-7-template">
+          <div class="info-step">
+            <div>
+              <img src="" alt="savings banner">
+            </div>
+          </div>
+        </template>
+
+      </div>
+
+      <div class="step-buttons">
+        <button id="backBtn" disabled>Back</button>
+        <button id="nextBtn" disabled>Next</button>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="./index.js" defer></script>
+</body>
+</html>
