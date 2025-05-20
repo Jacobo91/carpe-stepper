@@ -1,6 +1,7 @@
 import { stepOptions } from "./options.js";
 
-function createStepper(totalSteps) {
+document.addEventListener('DOMContentLoaded', () => {
+  function createStepper(totalSteps) {
   let currentStep = 1;
   const choices = new Array(totalSteps).fill(null);
 
@@ -172,3 +173,4 @@ nextBtn.addEventListener("click", () => {
 });
 
 updateUI();
+})
